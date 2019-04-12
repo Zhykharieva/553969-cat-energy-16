@@ -1,6 +1,6 @@
 @font-face {
   font-family: "oswald";
-    src:url("../fonts/oswaldmedium.woff2") format("woff2"),
+  src:url("../fonts/oswaldmedium.woff2") format("woff2"),
     url("../fonts/oswaldmedium.woff") format("woff"),
     url("../fonts/oswaldregular.woff2") format("woff2"),
     url("../fonts/oswaldregular.woff") format("woff");
@@ -46,6 +46,4 @@ a {
   border: 0;
 
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
 }
