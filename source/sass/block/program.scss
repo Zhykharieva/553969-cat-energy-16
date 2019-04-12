@@ -3,6 +3,7 @@
   margin: 20px;
   padding: 20px;
 }
+
 .program__title {
   font-size: 24px;
   line-height: 37.02px;
@@ -10,9 +11,11 @@
   color: #111111;
   text-transform: uppercase;
 }
+
 .program__text {
   @include fonts-index;
 }
+
 .program__link {
   font-size: 16px;
   line-height: 16px;

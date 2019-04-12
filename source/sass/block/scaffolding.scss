@@ -1,9 +1,9 @@
 @font-face {
   font-family: "oswald";
-  src:url("../fonts/oswaldmedium.woff2") format("woff2"),
-  url("../fonts/oswaldmedium.woff") format("woff"),
-  url("../fonts/oswaldregular.woff2") format("woff2"),
-  url("../fonts/oswaldregular.woff") format("woff");
+    src:url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff"),
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,6 @@ body {
   font-family: "Oswald", "Arial", sans-serif;
   color: #444444;
   font-style: normal;
-
   background-color: #ffffff;
 }
 
@@ -25,12 +24,14 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 a:active,
 a:hover,
 a {
   text-decoration: none;
   color: inherit;
 }
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
@@ -46,5 +47,5 @@ a {
 
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
+          clip-path: inset(100%);
 }

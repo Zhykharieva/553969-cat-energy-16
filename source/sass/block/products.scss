@@ -1,14 +1,17 @@
-.products__item{
+.products__item {
   margin: 25px 20px;
   border-bottom: 1px solid #ededed;
 }
+
 .products__title {
   @include catalog-title;
   color: #111111;
 }
+
 .products__info {
   @include catalog-text;
 }
+
 .products__text {
   @include catalog-text;
 }

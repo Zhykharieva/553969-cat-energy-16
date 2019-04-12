@@ -1,16 +1,17 @@
 .motivation {
   background-color: $bg-green;
-  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
+
 .motivation__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
-
 }
+
 .motivation__text {
   font-size: 14px;
   line-height: 14px;

@@ -4,6 +4,7 @@
   line-height: 18px;
   text-transform: none;
 }
+
 @mixin title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
@@ -11,6 +12,7 @@
   color: #111111;
   text-transform: uppercase;
 }
+
 @mixin catalog-title {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -18,6 +20,7 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+
 @mixin catalog-text {
   font-family: "Arial", sans-serif;
   font-size: 12px;

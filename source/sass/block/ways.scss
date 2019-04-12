@@ -1,9 +1,11 @@
-.ways__wrapper{
+.ways__wrapper {
   margin: 40px 20px;
 }
+
 .ways__title {
   @include title;
 }
+
 .ways__text {
   @include fonts-index;
   margin-top: 20px;
