@@ -1,0 +1,7 @@
+.invitation__text--dealer {
+  @include catalog-title;
+}
+
+.invitation__text--address {
+  @include fonts-index;
+}

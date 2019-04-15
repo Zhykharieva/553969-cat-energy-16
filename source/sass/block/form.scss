@@ -1,0 +1,21 @@
+.form {
+  margin: 30px 20px;
+}
+.form__text {
+  @include fonts-index;
+  font-family: "Oswald", sans-serif;
+  color: #111111;
+}
+
+.form__item {
+  @include form;
+}
+
+.form__info {
+  @include catalog-adds;
+}
+
+.form__add {
+  @include catalog-content;
+  line-height: 16px;
+}
