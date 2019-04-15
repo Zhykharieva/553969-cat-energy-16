@@ -10,7 +10,7 @@
   font-size: 36px;
   line-height: 60px;
   color: #111111;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 @mixin catalog-title {
@@ -19,7 +19,27 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  color: #111111;
 }
+
+@mixin form {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+@mixin catalog-adds {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: none;
+  color: #111111;
+}
+
 
 @mixin catalog-text {
   font-family: "Arial", sans-serif;
@@ -27,5 +47,13 @@
   line-height: 16px;
   font-weight: 400;
   color: #444444;
+  text-transform: none;
+}
+
+@mixin catalog-content {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
   text-transform: none;
 }

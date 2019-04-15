@@ -1,0 +1,35 @@
+.additional-goods {
+  margin: 30px 20px 35px 20px;
+}
+
+.additional-goods__item {
+  margin: 20px;
+  border-bottom: 1px solid #ededed;
+}
+
+.additional-goods__title {
+  @include catalog-adds;
+}
+
+.additional-goods__name {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.additional-goods__capasity,
+.additional-goods__price {
+  @include catalog-content;
+}
+
+.additional-goods__gift {
+  @include catalog-title;
+  color: #ffffff;
+  background-color: $bg-green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 292px;
+}
