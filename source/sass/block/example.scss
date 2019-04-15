@@ -1,0 +1,36 @@
+.example {
+  background-color: $bg-lightgrey;
+  padding: 20px 35px;
+}
+
+.example__title {
+  @include title;
+}
+
+.example__text {
+  @include fonts-index;
+}
+
+.example__result {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.example__result--all {
+  @include catalog-adds;
+}
+
+.example__cost {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: none;
+  font-weight: 400;
+  color: #111111;
+}
+
+.example__range {
+  @include catalog-title;
+}

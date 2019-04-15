@@ -1,0 +1,11 @@
+.map {
+  background-color: #ffffff;
+}
+
+.map__image {
+  background-color: $bg-lightgrey;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 366px;
+}
