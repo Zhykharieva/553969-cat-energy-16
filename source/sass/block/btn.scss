@@ -1,9 +1,22 @@
 .btn {
   background-color: $bg-green;
   font-family: "Oswald", sans-serif;
+  padding: 20px 72px;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .btn {
+    padding: 15px 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .btn {
+    padding: 20px 20px;
+  }
 }

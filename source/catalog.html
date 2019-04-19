@@ -7,25 +7,30 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo">
+      <div class="header__wrapper">
+        <div class="header__container">
+        <a class="header__logo">
         <img class="header__logo-image" src="img/logo-mobile.svg" width="226" height="30" alt="Логотип Кэт энерджи">
       </a>
       <nav class="nav">
-        <button class="nav__toggle" type="button"></button>
+        <!--<button class="nav__toggle" type="button"></button>-->
+      </div>
         <div class="nav__wrapper">
-          <ul class="nav__list site-list">
-            <li class="site-list__item">
+
+          <ul class="nav__list site-list site-list--catalog ">
+            <li class="site-list__item site-list__item--catalog">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class=" site-list__item site-list__item--catalog site-list__item--active">
               <a>Каталог продукции</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--catalog">
               <a href="program.html">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
+      </div>
     </header>
     <main class="catalog">
     <h1 class="catalog__title">Каталог продукции</h1>
@@ -101,7 +106,7 @@
             <td class="products__weight">1000г</td>
           </tr>
           <tr>
-            <td class="products__taste">>Вкус</td>
+            <td class="products__taste">Вкус</td>
             <td class="products__type">Рыба</td>
           </tr>
           <tr>
@@ -278,7 +283,7 @@
           </a>
         </div>
         <div class="footer__social social">
-          <b class="social__title">Давайте дружить!</b>
+          <b class="social__title visually-hidden">Давайте дружить!</b>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com">Мы в Вконтакте</a>

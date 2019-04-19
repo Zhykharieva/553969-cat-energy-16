@@ -1,3 +1,8 @@
+.program {
+  display: flex;
+  flex-direction: column;
+}
+
 .program__wrapper {
   background-color: $bg-lightgrey;
   margin: 20px;
@@ -23,4 +28,27 @@
   text-transform: uppercase;
   color: #111111;
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .program__title {
+    font-size: 36px;
+  }
+
+  .program__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    flex-direction: row;
+    margin-top: 40px;
+  }
 }

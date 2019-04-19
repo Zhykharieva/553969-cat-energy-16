@@ -1,13 +1,39 @@
 .ways__wrapper {
+  display: flex;
+  flex-direction: column;
   margin: 40px 20px;
 }
 
 .ways__title {
   @include title;
+  margin-left: 20px;
 }
 
 .ways__text {
   @include fonts-index;
-  margin-top: 20px;
-  padding-left: 80px;
+}
+
+@media (min-width: $tablet-width) {
+  .ways__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .ways__title {
+    font-size: 60px;
+  }
+
+  .ways__text {
+    width: 40%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .ways__text {
+    width: 20%;
+  }
 }
