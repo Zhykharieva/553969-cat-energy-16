@@ -1,6 +1,8 @@
 .footer__wrapper {
   background-color: $bg-lightgrey;
   padding: 35px 20px 15px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__logo {
@@ -11,11 +13,30 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
+.social__list {
+  display: flex;
+  flex-direction: row;
+
+  @include list-reset;
+}
+
 .footer__copyright {
-  font-family: "Arial", sans-serif;
+  @include catalog-content;
   font-size: 16px;
   line-height: 16px;
-  font-weight: 400;
-  text-transform: none;
-  color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__logo {
+    border-bottom: none;
+  }
+
+  .footer__social {
+    border-bottom: none;
+  }
 }

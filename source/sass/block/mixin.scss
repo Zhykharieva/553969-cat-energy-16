@@ -57,3 +57,9 @@
   font-weight: 400;
   text-transform: none;
 }
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

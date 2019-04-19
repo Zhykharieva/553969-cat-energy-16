@@ -1,7 +1,11 @@
 .motivation {
-  background-color: $bg-green;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  //padding: 31px 20px 20px 20px;
+  //text-align: center;
+}
+
+.motivation__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .motivation__title {
@@ -9,7 +13,7 @@
   line-height: 36px;
   font-weight: 400;
   color: #ffffff;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .motivation__text {
@@ -18,4 +22,28 @@
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .motivation__wrapper {
+    width: 450px;
+    margin-left: 120px;
+    margin-top: 75px;
+  }
+
+  .motivation__title {
+    @include title;
+    font-size: 60px;
+  }
+
+  .motivation__text {
+    @include catalog-title;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .motivation__wrapper {
+    width: 570px;
+  }
 }

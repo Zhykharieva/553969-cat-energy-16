@@ -1,3 +1,8 @@
+.products {
+  display: flex;
+  flex-direction: column;
+}
+
 .products__item {
   margin: 25px 20px;
   border-bottom: 1px solid #ededed;
@@ -14,4 +19,35 @@
 
 .products__text {
   @include catalog-text;
+}
+
+@media (min-width: $tablet-width) {
+  .products {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .products__item {
+    width: 40%;
+    background-color: $bg-lightgrey;
+  }
+
+  .products__title {
+    font-size: 20px;
+  }
+
+  .program__info,
+  .program__text {
+    font-size: 16px;
+  }
+
+  .products__item--more {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__item {
+    width: 20%;
+  }
 }

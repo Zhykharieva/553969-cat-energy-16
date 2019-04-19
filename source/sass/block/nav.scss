@@ -1,0 +1,61 @@
+.nav {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.nav__list {
+  @include list-reset;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #111111;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 580px;
+    margin: 0 auto;
+
+    @include form;
+    font-size: 18px;
+    line-height: 24.86px;
+  }
+
+  .site-list__item {
+    width: 192px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav__list {
+    width: 525px;
+    margin-right: 107px;
+    color: #ffffff;
+  }
+
+  .site-list--catalog {
+    color: #111111;
+    font-size: 20px;
+    width: 600px;
+  }
+
+  .site-list__item {
+    width: 175px;
+  }
+
+  .site-list__item--catalog {
+    width: 190px;
+  }
+}

@@ -2,3 +2,9 @@
   @include title;
   padding: 35px 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    font-size: 60px;
+  }
+}
