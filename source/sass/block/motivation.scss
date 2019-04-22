@@ -1,6 +1,8 @@
 .motivation {
-  //padding: 31px 20px 20px 20px;
-  //text-align: center;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
 
 .motivation__wrapper {
@@ -12,6 +14,7 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  margin-bottom: 10px;
   color: #ffffff;
   text-transform: none;
 }
@@ -22,6 +25,39 @@
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.motivation__button {
+  padding: 10px 52px;
+
+  }
+
+@media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+  .motivation__wrapper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 306px;
+    width: 100%;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-color: $bg-green;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .motivation__button {
+    margin-top: 288px;
+  }
+
+  .motivation__picture {
+    position: absolute;
+    bottom: 38px;
+    left: 19px;
+
+  }
 }
 
 @media (min-width: $tablet-width) {

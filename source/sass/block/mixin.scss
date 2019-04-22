@@ -63,3 +63,12 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin ways-image {
+  background-position: center;
+  background-color: $bg-green;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
