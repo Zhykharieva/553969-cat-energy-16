@@ -63,22 +63,41 @@
 @media (min-width: $tablet-width) {
   .motivation__wrapper {
     width: 450px;
-    margin-left: 120px;
-    margin-top: 75px;
+    margin-left: 95px;
+    justify-content: flex-start;
   }
 
   .motivation__title {
     @include title;
     font-size: 60px;
+    text-align: left;
   }
 
   .motivation__text {
     @include catalog-title;
     font-size: 20px;
+    text-align: left;
+    margin-top: 31px;
+  }
+
+  .motivation__button {
+    width: 250px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 17px 0;
+    margin-top: 27px;
+
   }
 }
 
 @media (min-width: $desktop-width) {
+  .motivation {
+    margin-top: 50px;
+    padding-left: 26px;
+  }
+
+
   .motivation__wrapper {
     width: 570px;
   }

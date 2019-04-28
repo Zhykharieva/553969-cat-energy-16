@@ -9,3 +9,21 @@
   width: 320px;
   height: 366px;
 }
+
+@media (min-width: $desktop-width) {
+  .map {
+    position: relative;
+  }
+
+  .map__image {
+    background-image: url("../img/bg-map-desktop@1x.png");
+    width: 1434px;
+    height: 403px;
+    background-color: $bg-lightgrey;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+}

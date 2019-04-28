@@ -6,11 +6,10 @@
 .program__wrapper {
   position: relative;
   background-color: $bg-lightgrey;
-  margin-left: 6%;
-  margin-right: 6%;
-  margin-top: 6%;
-  padding: 7%;
-  padding-right: 7%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 25px;
 }
 
 .program__title {
@@ -86,21 +85,34 @@
 
   @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     .program__wrapper {
-
+      display: flex;
+      flex-direction: column;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 10px;
+      padding-left: 51px;
+      padding-top: 46px;
     }
 
     .program__title {
       text-align: left;
+      margin-bottom: 7px;
     }
 
     .program__text {
-      padding-right: 40%;
+      padding-right: 260px;
+      margin-bottom: 12px;
       border: none;
     }
 
+    .program__text--up {
+      padding-right: 292px;
+
+    }
+
     .program__image {
-      left: 63%;
-      top: 20%;
+      left: 444px;
+      top: 90px;
       width: 200px;
       height: 200px;
       border-radius: 100px;
@@ -108,48 +120,80 @@
     }
 
     .program__icon--slim {
-      top: 0;
-      left: 10%;
+      top: -12px;
+      left: 30px;
       width: 140px;
       height: 194px;
     }
 
     .program__icon--pro {
-      top: 10%;
-      left: -20%;
+      top: 46px;
+      left: -32px;
       width: 268px;
       height: 112px;
     }
 
+    .program__link {
+      margin-bottom: 36px;
+    }
+
   }
 }
+
 @media (min-width: $desktop-width) {
   .program {
     flex-direction: row;
-    margin-top: 40px;
+    margin: 80px 70px 70px 70px;
  }
 
  .program__wrapper {
-   width: 50%;
+   display: flex;
+   flex-direction: column;
+   width: 570px;
+   margin-left: 40px;
+   margin-right: 40px;
+   padding-top: 45px;
+   padding-left: 52px;
+   box-sizing: border-box;
+   flex-shrink: 0;
+ }
+
+ .program__title {
+   margin-bottom: 57px;
+ }
+
+  .program__title--muscles {
+    padding-left: 45px;
+  }
+
+ .program__text {
+   margin-bottom: -3px;
+   border-bottom: none;
+ }
+
+ .program__link {
+   margin-bottom: 38px;
  }
 
  .program__image {
    width: 100px;
    height: 100px;
    border-radius: 50px;
+   top: 47px;
+   left: 52px;
 
  }
 
  .program__icon--slim {
-   top: 0;
-   left: 10%;
+   top: -6px;
+   left: 14px;
    width: 70px;
    height: 97px;
  }
 
  .program__icon--pro {
-   top: 10%;
-   left: -20%;
+   top: 21px;
+   left: -18px;
    width: 134px;
    height: 56px;
  }
