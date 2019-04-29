@@ -45,28 +45,37 @@
 }
 
 @media (min-width: $tablet-width) {
+  .ways {
+    margin: 30px;
+  }
   .ways__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 50px 30px;
-  }
+      }
 
   .ways__title {
     font-size: 60px;
-    margin-left: 3%;
+    margin: 0;
+    margin-bottom: 76px;
+    padding: 0;
   }
 
   .ways__text {
     position: relative;
     flex-direction: column;
-    width: 44%;
+    margin-bottom: 133px;
+    margin-right: 3%;
+    width: 43%;
     font-size: 16px;
     line-height: 24px;
-    margin: 3%;
     counter-increment: ways-num;
     z-index: 0;
+  }
+
+  .ways__text p {
+    padding-right: 56px;
   }
 
   .ways__leaf,
@@ -75,14 +84,14 @@
   .ways__surrogate {
     width: 80px;
     height: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 .ways__text::after {
     content: counter(ways-num);
     position: absolute;
     left: 120px;
     top: -38px;
-    font-size: 260px;
+    font-size: 280px;
     line-height: 1;
     font-family: "Oswald", "Arial", sans-serif;
     color: $bg-lightgrey;

@@ -14,12 +14,12 @@
 
   .site-list__item {
     width: 33%;
-    text-align: right;
+    text-align: center;
     border-bottom: none;
     @include form;
     font-size: 18px;
     line-height: 24.86px;
-    padding-top: 8px;
+    padding-top: 18px;
   }
 }
 

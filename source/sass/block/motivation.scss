@@ -29,8 +29,7 @@
 
 .motivation__button {
   padding: 10px 52px;
-
-  }
+}
 
 @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
   .motivation__wrapper::after {
@@ -54,13 +53,19 @@
 
   .motivation__picture {
     position: absolute;
-    bottom: 38px;
-    left: 19px;
-
+    bottom: 22px;
+    left: 10px;
+    width: 280px;
+    height: 271px;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .motivation {
+    position: relative;
+    min-height: 835px;
+  }
+
   .motivation__wrapper {
     width: 450px;
     margin-left: 95px;
@@ -87,6 +92,15 @@
     text-align: center;
     padding: 17px 0;
     margin-top: 27px;
+  }
+
+  .motivation__picture {
+    position: absolute;
+    bottom: -12px;
+    left: 15px;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
 
   }
 }
@@ -95,10 +109,21 @@
   .motivation {
     margin-top: 50px;
     padding-left: 26px;
+    min-height: 547px;
   }
 
 
   .motivation__wrapper {
     width: 570px;
+  }
+
+  .motivation__picture {
+    position: absolute;
+    bottom: 39px;
+    left: 245px;
+    width: 552px;
+    height: 499px;
+    z-index: -1;
+
   }
 }
