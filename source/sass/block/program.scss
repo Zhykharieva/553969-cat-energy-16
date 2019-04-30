@@ -156,12 +156,14 @@
 @media (min-width: $desktop-width) {
   .program {
     flex-direction: row;
-    margin: 36px 0 70px 0;
+    margin: 36px 0 70px -40px;
   }
 
   .program__wrapper {
     display: flex;
     flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
     width: 570px;
     padding-top: 45px;
     padding-left: 52px;

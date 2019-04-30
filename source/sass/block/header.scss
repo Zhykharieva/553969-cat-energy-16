@@ -3,7 +3,7 @@
 }
 
 .header__wrapper {
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   flex-direction: column;
 }
@@ -25,6 +25,15 @@
   @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
     .header__container {
       position: relative;
+    }
+
+    .header__wrapper{
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
+    .header__logo {
+      margin-left: 20px;
     }
 
     .header__container::after {
@@ -53,8 +62,6 @@
     width: 100%;
     margin: 0;
     margin-top: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
