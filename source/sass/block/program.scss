@@ -4,21 +4,35 @@
 }
 
 .program__wrapper {
+  position: relative;
   background-color: $bg-lightgrey;
-  margin: 20px;
-  padding: 20px;
+  margin-top: 21px;
+  padding: 25px 16px 19px 20px;
 }
 
 .program__title {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  margin-left: 7px;
   font-size: 24px;
   line-height: 37.02px;
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .program__text {
   @include fonts-index;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 23px;
+  margin-bottom: 20px;
+}
+
+.program__title--muscles {
+  margin-left: 35px;
+  margin-top: 4px;
+  text-align: center;
 }
 
 .program__link {
@@ -29,6 +43,38 @@
   color: #111111;
   list-style: none;
 }
+
+.program__image {
+  position: absolute;
+  left: 23px;
+  top: 25px;
+  background-color: $bg-green;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+
+}
+
+.program__icon--slim {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 49px;
+}
+
+.program__icon--pro {
+  position: absolute;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  top: 10px;
+  left: -10px;
+  width: 67px;
+  height: 28px;
+}
+
 
 @media (min-width: $tablet-width) {
   .program__title {
@@ -44,11 +90,128 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    .program__wrapper {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 45px;
+      padding-left: 52px;
+      padding-top: 72px;
+      margin-top: 28px;
+    }
+
+    .program__title {
+      text-align: left;
+      margin: 0;
+      margin-bottom: 11px;
+    }
+
+    .program__text {
+      padding-right: 40%;
+      margin-bottom: 34px;
+      margin-left: 0;
+      border: none;
+    }
+
+    .program__text--up {
+      padding-right: 46.5%;
+    }
+
+    .program__image {
+      top: 25%;
+      left: 63%;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+    }
+
+    .program__icon--slim {
+      top: -12px;
+      left: 30px;
+      width: 140px;
+      height: 194px;
+    }
+
+    .program__icon--pro {
+      top: 48px;
+      left: -33px;
+      width: 268px;
+      height: 112px;
+    }
+
+    .program__link {
+      margin-bottom: 16px;
+    }
+
+    .program__wrapper--pro {
+      padding-bottom: 45px;
+      padding-left: 52px;
+      padding-top: 75px;
+      margin-top: 30px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .program {
     flex-direction: row;
-    margin-top: 40px;
+    margin: 36px 0 70px 0;
+  }
+
+  .program__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    padding-top: 45px;
+    padding-left: 52px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+
+  .program__wrapper--pro {
+    margin-left: 80px;
+  }
+
+  .program__title {
+    margin-bottom: 57px;
+    margin-left: -10px;
+    margin-top: 31px;
+  }
+
+  .program__title--muscles {
+    padding-left: 45px;
+  }
+
+  .program__text {
+    margin-bottom: 10px;
+    margin-right: 16px;
+    border-bottom: none;
+  }
+
+  .program__link {
+    margin-bottom: 41px;
+  }
+
+  .program__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .program__icon--slim {
+    top: -6px;
+    left: 14px;
+    width: 70px;
+    height: 97px;
+  }
+
+  .program__icon--pro {
+    top: 21px;
+    left: -18px;
+    width: 134px;
+    height: 56px;
   }
 }

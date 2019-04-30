@@ -1,39 +1,126 @@
+.ways {
+  padding-bottom: 20px;
+}
+
 .ways__wrapper {
   display: flex;
   flex-direction: column;
-  margin: 40px 20px;
 }
 
 .ways__title {
   @include title;
-  margin-left: 20px;
+  margin-top: 14px;
 }
 
 .ways__text {
   @include fonts-index;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.ways__p{
+  flex: 1;
+  margin: 0;
+}
+
+.ways__leaf {
+  background-image: url("../img/advantage-leaf@1x.png");
+  @include ways-image;
+}
+
+.ways__powder {
+  background-image: url("../img/advantage-powder@1x.png");
+  @include ways-image;
+}
+
+.ways__surrogate {
+  background-image: url("../img/advantage-dining@1x.png");
+  @include ways-image;
+}
+
+.ways__changes {
+  background-image: url("../img/advantage-clock@1x.png");
+  @include ways-image;
 }
 
 @media (min-width: $tablet-width) {
+  .ways {
+    padding-top: 40px;
+  }
+
   .ways__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
+      }
 
   .ways__title {
     font-size: 60px;
+    margin: 0;
+    margin-bottom: 76px;
+    padding: 0;
   }
 
   .ways__text {
-    width: 40%;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 133px;
+    margin-right: 3%;
+    width: 43%;
     font-size: 16px;
     line-height: 24px;
+    counter-increment: ways-num;
+    z-index: 0;
   }
+
+  .ways__p {
+    padding-right: 56px;
+  }
+
+  .ways__leaf,
+  .ways__powder,
+  .ways__changes,
+  .ways__surrogate {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 33px;
+  }
+.ways__text::after {
+    content: counter(ways-num);
+    position: absolute;
+    left: 120px;
+    top: -38px;
+    font-size: 280px;
+    line-height: 1;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: $bg-lightgrey;
+    z-index: -1;
+}
 }
 
 @media (min-width: $desktop-width) {
-  .ways__text {
-    width: 20%;
+  .ways {
+    padding-top: 8px;
+    padding-bottom: 40px;
   }
+
+  .ways__text {
+    width: 245px;
+    flex-shrink: 0;
+    margin:0;
+    padding: 0;
+  }
+
+  .ways__title {
+    margin-bottom: 72px;
+  }
+
+  .ways__p {
+    max-width: 250px;
+    padding-right: 0px;
+  }
+
+
 }

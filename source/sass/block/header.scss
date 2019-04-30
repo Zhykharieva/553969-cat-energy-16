@@ -3,7 +3,6 @@
 }
 
 .header__wrapper {
-  width: 280px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -12,40 +11,67 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
-@media (min-width: $mobile-width) and (max-width: 767px) {
-  .header {
-    background-color: #ffffff;
-  }
-
-  .header--background::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    min-height: 306px;
-    width: 100%;
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-color: $bg-green;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
+.header__logo {
+  display: block;
+  width: 100%;
+  max-width: 190px;
 }
 
-@media (min-width: $tablet-width) and (max-width: 1299px) {
+  @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+    .header__container {
+      position: relative;
+    }
+
+    .header__container::after {
+      position: absolute;
+      content: ("");
+      top: 23px;
+      right: 23px;
+      background-image: url("../img/icon-close.svg");
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+@media (min-width: $tablet-width) {
+  .header__container {
+    border-bottom: none;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
   .header {
-    background-color: #ffffff;
-    margin-top: 25px;
+    //background-color: #ffffff;
+    //margin-top: 25px;
   }
 
   .header__wrapper {
-    width: 708px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    margin-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    box-sizing: border-box;
   }
+
+  .header__container {
+    padding: 0;
+  }
+
+  .header__logo {
+    max-width: 174px;
+    width: 174px;
+    height: auto;
+
+  }
+}
 }
 
 @media (min-width: $desktop-width) {
@@ -54,12 +80,16 @@
     padding-top: 50px;
   }
 
+  .header__container{
+    padding: 0;
+  }
+
   .header__wrapper {
-    width: 1220px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .header--background::after {
@@ -67,7 +97,7 @@
     position: absolute;
     content: "";
     width: 50%;
-    min-height: 601px;
+    min-height: 696px;
     top: 0;
     right: 0;
     left: inherit;
@@ -75,6 +105,13 @@
     background-color: $bg-green;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    z-index: -2;
+  }
+
+  .header__logo {
+    max-width: 202px;
+    width: 202px;
+    height: auto;
+
   }
 }

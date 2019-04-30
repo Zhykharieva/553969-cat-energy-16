@@ -1,6 +1,8 @@
 .motivation {
-  //padding: 31px 20px 20px 20px;
-  //text-align: center;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
 
 .motivation__wrapper {
@@ -12,6 +14,7 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  margin-bottom: 10px;
   color: #ffffff;
   text-transform: none;
 }
@@ -24,26 +27,103 @@
   text-transform: uppercase;
 }
 
+.motivation__button {
+  padding: 10px 52px;
+}
+
+@media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+  .motivation__wrapper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 306px;
+    width: 100%;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-color: $bg-green;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .motivation__button {
+    margin-top: 288px;
+  }
+
+  .motivation__picture {
+    position: absolute;
+    bottom: 22px;
+    left: 10px;
+    width: 280px;
+    height: 271px;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .motivation {
+    position: relative;
+    min-height: 835px;
+  }
+
   .motivation__wrapper {
     width: 450px;
-    margin-left: 120px;
-    margin-top: 75px;
+    margin-left: 95px;
+    justify-content: flex-start;
   }
 
   .motivation__title {
     @include title;
     font-size: 60px;
+    text-align: left;
   }
 
   .motivation__text {
     @include catalog-title;
     font-size: 20px;
+    text-align: left;
+    margin-top: 31px;
+  }
+
+  .motivation__button {
+    width: 250px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 17px 0;
+    margin-top: 27px;
+  }
+
+  .motivation__picture {
+    position: absolute;
+    bottom: -12px;
+    left: 15px;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+
   }
 }
 
 @media (min-width: $desktop-width) {
+  .motivation {
+    margin-top: 50px;
+    padding-left: 26px;
+    min-height: 547px;
+  }
+
+
   .motivation__wrapper {
     width: 570px;
+  }
+
+  .motivation__picture {
+    position: absolute;
+    bottom: 39px;
+    left: 245px;
+    width: 552px;
+    height: 499px;
+    z-index: -1;
+
   }
 }
