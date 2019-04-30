@@ -6,9 +6,7 @@
 .program__wrapper {
   position: relative;
   background-color: $bg-lightgrey;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 22px;
+  margin-top: 21px;
   padding: 25px 16px 19px 20px;
 }
 
@@ -97,28 +95,28 @@
     .program__wrapper {
       display: flex;
       flex-direction: column;
-      margin-left: 30px;
-      margin-right: 30px;
-      margin-bottom: 10px;
-      padding-left: 51px;
-      padding-top: 46px;
+      padding-bottom: 45px;
+      padding-left: 52px;
+      padding-top: 72px;
+      margin-top: 28px;
     }
 
     .program__title {
       text-align: left;
-      margin-bottom: 7px;
+      margin: 0;
+      margin-bottom: 11px;
     }
 
     .program__text {
       padding-right: 40%;
-      margin-bottom: 12px;
+      margin-bottom: 34px;
+      margin-left: 0;
       border: none;
     }
 
-    //.program__text--up {
-    //  padding-right: 46%;
-
-  //  }
+    .program__text--up {
+      padding-right: 46.5%;
+    }
 
     .program__image {
       top: 25%;
@@ -126,7 +124,6 @@
       width: 200px;
       height: 200px;
       border-radius: 100px;
-
     }
 
     .program__icon--slim {
@@ -137,16 +134,22 @@
     }
 
     .program__icon--pro {
-      top: 46px;
-      left: -32px;
+      top: 48px;
+      left: -33px;
       width: 268px;
       height: 112px;
     }
 
     .program__link {
-      margin-bottom: 36px;
+      margin-bottom: 16px;
     }
 
+    .program__wrapper--pro {
+      padding-bottom: 45px;
+      padding-left: 52px;
+      padding-top: 75px;
+      margin-top: 30px;
+    }
   }
 }
 
@@ -154,61 +157,61 @@
   .program {
     flex-direction: row;
     margin: 36px 0 70px 0;
- }
+  }
 
- .program__wrapper {
-   display: flex;
-   flex-direction: column;
-   width: 570px;
-   margin-left: 40px;
-   margin-right: 40px;
-   padding-top: 45px;
-   padding-left: 52px;
-   box-sizing: border-box;
-   flex-shrink: 0;
- }
+  .program__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    padding-top: 45px;
+    padding-left: 52px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
 
- .program__title {
-   margin-bottom: 57px;
-   margin-left: -10px;
-   margin-top: 31px;
- }
+  .program__wrapper--pro {
+    margin-left: 80px;
+  }
+
+  .program__title {
+    margin-bottom: 57px;
+    margin-left: -10px;
+    margin-top: 31px;
+  }
 
   .program__title--muscles {
     padding-left: 45px;
   }
 
- .program__text {
-   margin-bottom: 10px;
-   margin-right: 16px;
-   border-bottom: none;
- }
+  .program__text {
+    margin-bottom: 10px;
+    margin-right: 16px;
+    border-bottom: none;
+  }
 
- .program__link {
-   margin-bottom: 41px;
- }
+  .program__link {
+    margin-bottom: 41px;
+  }
 
- .program__image {
-   width: 100px;
-   height: 100px;
-   border-radius: 50px;
-   top: 47px;
-   left: 52px;
+  .program__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    top: 47px;
+    left: 52px;
+  }
 
- }
+  .program__icon--slim {
+    top: -6px;
+    left: 14px;
+    width: 70px;
+    height: 97px;
+  }
 
- .program__icon--slim {
-   top: -6px;
-   left: 14px;
-   width: 70px;
-   height: 97px;
- }
-
- .program__icon--pro {
-   top: 21px;
-   left: -18px;
-   width: 134px;
-   height: 56px;
- }
-
+  .program__icon--pro {
+    top: 21px;
+    left: -18px;
+    width: 134px;
+    height: 56px;
+  }
 }

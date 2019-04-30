@@ -1,7 +1,13 @@
 .site-list__item {
-  padding-top: 21px;
-  padding-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 21px;
   border-bottom: 1px solid #e6e6e6;
+}
+
+@media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+  .site-list__item {
+    padding-right: 40px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -25,7 +31,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    margin-left: 55px;
+    margin-left: 0;
   }
   .site-list--catalog {
     color: #111111;

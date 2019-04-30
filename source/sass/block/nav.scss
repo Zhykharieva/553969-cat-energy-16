@@ -25,11 +25,8 @@
 @media (min-width: $desktop-width) {
   .nav {
     width: 570px;
-  }
-
-  .nav__list {
-    width: 570px;
-    margin-right: 107px;
+    margin: 0;
+    margin-right: 46px;
     color: #ffffff;
   }
 }

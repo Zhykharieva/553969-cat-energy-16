@@ -1,6 +1,7 @@
 .example {
   background-color: $bg-lightgrey;
   padding: 20px 35px;
+  height: 667px; //временно
 }
 
 .example__title {
@@ -33,4 +34,18 @@
 
 .example__range {
   @include catalog-title;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: #ffffff;
+    border-top: 1px solid $bg-lightgrey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: #ffffff;
+    border-top: none;
+  }
 }

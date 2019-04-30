@@ -1,5 +1,5 @@
 .ways {
-  margin: 40px 20px;
+  padding-bottom: 20px;
 }
 
 .ways__wrapper {
@@ -9,7 +9,7 @@
 
 .ways__title {
   @include title;
-  margin-left: 20px;
+  margin-top: 14px;
 }
 
 .ways__text {
@@ -19,7 +19,7 @@
   margin-bottom: 20px;
 }
 
-.ways__text p{
+.ways__p{
   flex: 1;
   margin: 0;
 }
@@ -46,8 +46,9 @@
 
 @media (min-width: $tablet-width) {
   .ways {
-    margin: 30px;
+    padding-top: 40px;
   }
+
   .ways__wrapper {
     display: flex;
     flex-direction: row;
@@ -74,7 +75,7 @@
     z-index: 0;
   }
 
-  .ways__text p {
+  .ways__p {
     padding-right: 56px;
   }
 
@@ -100,7 +101,26 @@
 }
 
 @media (min-width: $desktop-width) {
-  .ways__text {
-    width: 19%;
+  .ways {
+    padding-top: 8px;
+    padding-bottom: 40px;
   }
+
+  .ways__text {
+    width: 245px;
+    flex-shrink: 0;
+    margin:0;
+    padding: 0;
+  }
+
+  .ways__title {
+    margin-bottom: 72px;
+  }
+
+  .ways__p {
+    max-width: 250px;
+    padding-right: 0px;
+  }
+
+
 }

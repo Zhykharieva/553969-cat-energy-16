@@ -1,13 +1,12 @@
 .wrapper {
   position: relative;
   display: block;
-  width: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
 }
-
 
 @media (min-width: $tablet-width) {
   .wrapper {

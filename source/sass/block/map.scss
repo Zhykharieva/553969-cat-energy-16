@@ -10,6 +10,22 @@
   height: 366px;
 }
 
+@media (min-width: $tablet-width) {
+  .map {
+    position: relative;
+  }
+
+  .map__image {
+    background-image: url("../img/bg-map-tablet@1x.png");
+    width: 768px;
+    height: 407px;
+    background-color: $bg-lightgrey;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .map {
     position: relative;
