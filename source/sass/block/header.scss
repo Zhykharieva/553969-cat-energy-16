@@ -92,6 +92,12 @@
     padding-right: 40px;
   }
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .header--background::after {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+  }
+
   .header--background::after {
     display: block;
     position: absolute;
