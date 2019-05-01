@@ -156,7 +156,7 @@
 @media (min-width: $desktop-width) {
   .program {
     flex-direction: row;
-    margin: 36px 0 70px -40px;
+    margin: 36px -40px 70px -40px;
   }
 
   .program__wrapper {
@@ -171,11 +171,7 @@
     flex-shrink: 0;
   }
 
-  .program__wrapper--pro {
-    margin-left: 80px;
-  }
-
-  .program__title {
+    .program__title {
     margin-bottom: 57px;
     margin-left: -10px;
     margin-top: 31px;
