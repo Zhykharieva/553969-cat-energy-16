@@ -1,7 +1,9 @@
 .btn {
   display: inline-block;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 0
+
+  ;
   background-color: $bg-green;
   font-family: "Oswald", sans-serif;
   color: #ffffff;
@@ -14,9 +16,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .btn {
-    padding: 15px 20px;
-  }
+
 }
 
 @media (min-width: $desktop-width) {

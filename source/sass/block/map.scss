@@ -6,8 +6,15 @@
   background-color: $bg-lightgrey;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
+  background-size: cover;
   width: 320px;
+
+}
+
+.map__image iframe {
   height: 366px;
+  border: 0;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,6 +30,10 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .map__image iframe {
+    height: 407px;
   }
 }
 
@@ -40,6 +51,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+  }
+
+  .map__image iframe {
+    height: 403px;
   }
 
 }

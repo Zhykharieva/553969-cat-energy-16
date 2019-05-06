@@ -27,10 +27,6 @@
   text-transform: uppercase;
 }
 
-.motivation__button {
-  padding: 10px 52px;
-}
-
 @media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
   .motivation__wrapper::after {
     content: "";
