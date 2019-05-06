@@ -8,11 +8,19 @@
   padding-right: 20px;
 }
 
+.wrapper--other {
+  padding: 0;
+}
+
 @media (min-width: $tablet-width) {
   .wrapper {
     max-width: 100%;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .wrapper--other {
+    padding: 0;
   }
 }
 
