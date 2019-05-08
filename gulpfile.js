@@ -69,9 +69,9 @@ gulp.task("sprite", function(){
 })
 
 gulp.task("html", function () {
- return gulp.src("source/*.html")
- .pipe(posthtml())
- .pipe(gulp.dest("source"));
+  return gulp.src("source/*.html")
+  .pipe(posthtml())
+  .pipe(gulp.dest("source"));
 });
 
 gulp.task("html", function () {

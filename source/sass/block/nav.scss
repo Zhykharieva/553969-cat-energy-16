@@ -24,9 +24,9 @@
 
 @media (min-width: $desktop-width) {
   .nav {
-    width: 570px;
+    width: auto;
     margin: 0;
-    margin-right: 46px;
+    display: block;
     color: #ffffff;
   }
 }
