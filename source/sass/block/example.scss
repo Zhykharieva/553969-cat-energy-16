@@ -40,12 +40,12 @@
   .example {
     background-color: #ffffff;
     border-top: 1px solid $bg-lightgrey;
+    height: 995px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .example {
-    background-color: #ffffff;
-    border-top: none;
+    height: 645px;
   }
 }

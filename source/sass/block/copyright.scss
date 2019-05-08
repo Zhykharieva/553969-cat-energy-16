@@ -1,0 +1,29 @@
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.copyright__icon {
+  fill: #666666;
+}
+
+.copyright__icon:focus,
+.copyright__icon:hover {
+  fill: #91c96f;
+}
+
+.copyright__icon:active,
+.copyright__link:active {
+  fill: #91c96f;
+  opacity: 0.7;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    width: 100%;
+  }
+}

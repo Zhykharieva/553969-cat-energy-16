@@ -9,6 +9,7 @@
 .invitation {
   padding: 25px 20px;
   display: flex;
+  background-color: $bg-lightgrey;
 }
 
 .invitation__text {
@@ -18,6 +19,7 @@
 @media (min-width: $tablet-width) {
   .invitation {
     padding: 60px 73px;
+    background-color: #ffffff;
     justify-content: space-between;
     box-sizing: border-box;
   }
