@@ -47,6 +47,15 @@
     border-bottom: none;
   }
 
+  .header__logo:hover,
+  .header__logo:focus {
+    opacity: 0.4;
+  }
+
+  .header__logo:active {
+    opacity: 0.2;
+  }
+
   @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
   .header {
     //background-color: #ffffff;

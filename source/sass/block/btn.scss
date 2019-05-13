@@ -16,6 +16,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .btn:hover,
+  .btn:focus {
+    background-color: darken($bg-green, 10%);
+  }
+  .btn:active {
+    background-color: darken($bg-green, 10%);
+    color: rgba(255, 255, 255, 0.3);
+  }
 
 }
 

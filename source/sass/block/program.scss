@@ -36,12 +36,35 @@
 }
 
 .program__link {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
   color: #111111;
   list-style: none;
+}
+
+.program__link a::after {
+  position: absolute;
+  content: ("");
+  top: 5px;
+  left: 97px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 11px;
+}
+
+.program__link a ::after:hover,
+.program__link a ::after:focus {
+  position: absolute;
+  content: ("");
+  top: 5px;
+  left: 97px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  width: 33px;
+  height: 11px;
 }
 
 .program__image {
@@ -75,7 +98,6 @@
   height: 28px;
 }
 
-
 @media (min-width: $tablet-width) {
   .program__title {
     font-size: 36px;
@@ -89,6 +111,11 @@
   .program__link {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .program__link a::after {
+    top: 6px;
+    left: 132px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
