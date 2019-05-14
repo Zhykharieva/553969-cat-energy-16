@@ -49,7 +49,7 @@
 
 .form__list div {
   margin-right: 20px;
-  flex-shrink: 0;
+
 }
 
 .form__list--name div {
@@ -61,7 +61,13 @@
   padding-left: 0;
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 16px;
   @include form;
+}
+
+.form__box {
+  box-sizing: content-box;
+  width: 100%;
 }
 
 .form__point {
@@ -131,6 +137,7 @@
 .form__option--contact {
   border: none;
   flex: 1;
+  padding-left: 0;
 }
 
 .form__contact-container {
@@ -225,4 +232,79 @@
   @include catalog-content;
   line-height: 16px;
   margin-left: 60px;
+}
+
+@media (min-width: $tablet-width) {
+ .form {
+   margin: 54px 0;
+ }
+
+ .form__text {
+   font-size: 20px;
+   line-height: 30px;
+   margin-left: 70px;
+   margin-right: 270px;
+ }
+
+ .form__item {
+   font-size: 20px;
+   line-height: 20px;
+   margin-left: 70px;
+   margin-right: 68px;
+   margin-top: 58px;
+ }
+
+ .form__list {
+   margin-top: 7px;
+   margin-bottom: 14px;
+ }
+
+ .form__option {
+   font-size: 20px;
+   line-height: 20px;
+   padding-top: 14px;
+   padding-bottom: 16px;
+   padding-left: 18px;
+ }
+
+ .form__list div {
+   margin-right: 19px;
+ }
+
+ .form__list--name div {
+   margin-right: 17px;
+ }
+
+ .form__wrapper--border {
+   margin: 0;
+   margin: 39px 67px 39px 70px;
+   border: none;
+   border: 1px solid #ededed;
+ }
+
+ .form__item--program {
+   margin: 0;
+   margin-top: 9px;
+   margin-left: 30px;
+ }
+
+ .form__point {
+   margin-top: 25px;
+   margin-bottom: 8px;
+   padding-left: 57px;
+ }
+
+ .form__point::before {
+   width: 40px;
+   height: 40px;
+   top: -11px;
+   left: -3px;
+ }
+
+ .form__radio-btn[type="radio"]:checked + label::after {
+   width: 17px;
+   height: 17px;
+   top: 2px;
+   left: 10px;
+ }
 }

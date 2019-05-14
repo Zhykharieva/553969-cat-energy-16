@@ -5,3 +5,11 @@
   margin-top: 15px;
   margin-left: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-form__title {
+    font-size: 60px;
+    margin-left: 30px;
+    margin-top: 55px;
+  }
+}

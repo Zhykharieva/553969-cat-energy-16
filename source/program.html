@@ -48,22 +48,25 @@
           <div class="form__wrapper">
           <fieldset class="form__item">
             <legend class="visually-hidden">Личные данные:</legend>
-            <label class="form__list form__list--name"for="name">
+            <label class="form__list form__list--name" for="name">
               <div >Имя:*</div>
             <input class="form__option" type="text" value="БАРСИК" id="name">
           </label>
             <label class="form__list" for="weight">
-            <div>Вес(кг):*</div>
+            <div>Вес&nbsp;(кг):*</div>
             <input class="form__option" type="text" name="weight" id="weight" value="7">
            </label>
             <label class="form__list" for="age">
-              <div >Возраст(лет):</div>
-            <input class="form__option" type="text" name="age" id="age" value="7">
+              <div >Возраст&nbsp;(лет):</div>
+              <div class="form__box">
+
+                <input  class="form__option" type="text" name="age" id="age" value="7">
+                </div>
             </label>
           </fieldset>
             </div>
             <div class="form__wrapper  form__wrapper--border">
-          <fieldset class="form__item">
+          <fieldset class="form__item form__item--program">
             <input class="form__radio-btn visually-hidden" type="radio" id="less-weight" name="choice" checked>
             <label class="form__point" for="less-weight" tabindex="0">
             Похудение
