@@ -413,6 +413,88 @@
    font-size: 16px;
    padding-top: 14px;
  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__data-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .form__item {
+    margin: 0;
+    margin-top: 30px;
+    padding-bottom: 0px;
+  }
+
+  .form__wrapper--border {
+    margin: 0;
+    margin-top: 37px;
+    margin-bottom: 16px;
+  }
+
+  .form__item--program {
+    margin: 0;
+    margin-top: 9px;
+    margin-left: 30px;
+    padding-bottom: 0px;
+  }
+
+  .form__text {
+    margin-left: 40px;
+    margin-right: 0;
+    width: 323px;
+  }
+
+  .form__data-container  .form__wrapper {
+    width: 570px;
+  }
+
+  .form__wrapper {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .form__point {
+    padding-left: 57px;
+  }
+
+  .form__contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 73px;
+  }
+
+  .form__contact {
+    width: 570px;
+  }
+
+  .form__textarea {
+    width: 1200px;
+  }
+
+  .form__item--add {
+    margin-top: 48px;
+  }
+
+  .form__checkbox-label {
+    width: 187px;
+  }
+
+  .form__container {
+    margin-left: 40px;
+    margin-top: 26px;
+  }
+
+  .form__btn {
+    width: 569px;
+  }
+
+  .form__add {
+    margin-left: 82px;
+  }
 
 
 }

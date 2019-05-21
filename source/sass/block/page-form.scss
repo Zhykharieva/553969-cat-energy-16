@@ -13,3 +13,10 @@
     margin-top: 55px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-form__title {
+    margin-left: 40px;
+    margin-top: 73px;
+  }
+}
