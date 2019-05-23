@@ -32,6 +32,7 @@
     }
 
     .header__container::after {
+      display: none;
       position: absolute;
       content: ("");
       top: 23px;

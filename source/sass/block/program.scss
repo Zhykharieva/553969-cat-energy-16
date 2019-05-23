@@ -131,7 +131,12 @@
     .program__title {
       text-align: left;
       margin: 0;
-      margin-bottom: 11px;
+      margin-bottom: 9px;
+      margin-top: 6px;
+    }
+
+    .program__title--muscles {
+      margin-top: 1px;
     }
 
     .program__text {
@@ -183,7 +188,7 @@
 @media (min-width: $desktop-width) {
   .program {
     flex-direction: row;
-    margin: 36px -40px 70px -40px;
+    margin: 42px -40px 70px -40px;
   }
 
   .program__wrapper {

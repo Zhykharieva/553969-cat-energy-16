@@ -72,13 +72,15 @@
     @include title;
     font-size: 60px;
     text-align: left;
+    margin-top: 55px;
   }
 
   .motivation__text {
     @include catalog-title;
     font-size: 20px;
     text-align: left;
-    margin-top: 31px;
+    margin-top: 30px;
+    margin-left: 3px;
   }
 
   .motivation__button {
@@ -88,6 +90,7 @@
     text-align: center;
     padding: 17px 0;
     margin-top: 27px;
+    margin-left: 3px;
   }
 
   .motivation__picture {
@@ -106,6 +109,18 @@
     margin-top: 50px;
     padding-left: 26px;
     min-height: 547px;
+  }
+
+  .motivation__text {
+    margin-top: 31px;
+    margin-left: 0px;
+  }
+
+  .motivation__button {
+    margin-top: 35px;
+    margin-left: 0px;
+    width: 245px;
+    padding: 16px 0;
   }
 
 

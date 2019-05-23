@@ -63,12 +63,14 @@
 
   .site-list--catalog & .site-list__item--active a::after  {
     background: $bg-green;
+    bottom: 7px;
   }
 
   .site-list--catalog {
     color: #111111;
     font-size: 20px;
     width: 600px;
+    margin-right: -101px;
   }
 
   .site-list__item {

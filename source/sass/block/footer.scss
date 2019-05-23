@@ -6,10 +6,14 @@
   align-items: center;
 }
 
+.footer__wrapper--catalog {
+  padding-top: 30px;
+}
+
 .footer__logo {
   border-bottom: 1px solid #d9d9d9;
   width: 280px;
-  padding-bottom: 29px;
+  padding-bottom: 27px;
 }
 
 .footer__logo-link {
@@ -42,7 +46,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    padding: 33px 30px;
+    padding: 30px 30px;
   }
 
   .footer__logo {
@@ -66,6 +70,18 @@
 
 @media (min-width: $desktop-width) {
   .footer__wrapper {
-    padding: 33px 40px;
+    padding: 40px;
+  }
+
+  .footer__wrapper--catalog {
+    padding: 35px 40px;
+  }
+
+  .footer__wrapper--program {
+    padding: 46px 40px;
+  }
+
+  .footer__social {
+    width: 215px;
   }
 }

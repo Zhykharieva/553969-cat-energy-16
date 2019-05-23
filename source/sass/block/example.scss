@@ -97,18 +97,16 @@
 }
 
 .example__group-images {
-  max-width: 320px;
+  width: 320px;
+  height: 240px;
   margin: 0 auto;
   margin-top: 35px;
-  margin-left: -20px;
-  margin-right: -20px;
   position: relative;
 }
 
 .example__img {
   display: block;
   position: absolute;
-  min-height: 240px;
 }
 
 .example__img--after {
@@ -117,7 +115,7 @@
 
 .example__range {
   @include catalog-title;
-  margin: 31px 39px 0 43px;
+  margin: 31px 59px 0 63px;
   padding-bottom: 36px;
   display: flex;
   justify-content: space-between;
@@ -159,7 +157,7 @@
   .example {
     background-color: #ffffff;
     border-top: 1px solid $bg-lightgrey;
-    margin-top: -50px;
+    margin-top: -55px;
   }
   .example__title {
     font-size: 60px;
@@ -223,24 +221,22 @@
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    max-width: 106%;
-    height: 462px;
+    width: 106%;
     background-color: $bg-lightgrey;
-    margin-top: 223px;
+    height: 462px;
+    margin-top: 221px;
     margin-left: -20px;
-    margin-right: -20px;
-  }
+ }
 
   .example__group-images {
-    max-width: 106%;
-    margin-top: 344px;
-    z-index: 0;
+    width: 106%;
+    height: 313px;
+    z-index: 1;
   }
 
   .example__img {
-    bottom: 0;
+    bottom: -2px;
     left: 68px;
-    height: 513px;
   }
 
   .example__img--before {
@@ -253,8 +249,9 @@
   }
 
   .example__range {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0;
+    margin-left: 118px;
+    margin-right: 125px;
     margin-top: 23px;
   }
 
@@ -296,12 +293,12 @@
     background-color: $bg-green;
     z-index: 2;
   }
-
-
-
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    border: none;
+  }
   .example__title {
     margin-left: 40px;
     margin-top: 117px;
@@ -354,10 +351,11 @@
 
   .example__group {
     width: 650px;
+    height: 240px;
   }
 
   .example__img {
-    bottom: 245px;
+    bottom: 40px;
     left: -37px;
   }
 
@@ -367,6 +365,12 @@
 
   .example__img--before {
     clip: rect(auto, 364px, auto, auto);
+  }
+
+  .example__range {
+    padding-bottom: 69px;
+    margin: 0 40px;
+
   }
 
 }
