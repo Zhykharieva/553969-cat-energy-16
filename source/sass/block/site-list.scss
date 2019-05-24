@@ -41,7 +41,7 @@
   .site-list__item--active a::after {
     content: "";
     position: absolute;
-    bottom: 13px;
+    bottom: 9px;
     left: 20px;
     right: 0;
     height: 2px;
@@ -59,6 +59,7 @@
 
   .site-list__item--active a::after {
     background: #ffffff;
+    bottom: 6px;
   }
 
   .site-list--catalog & .site-list__item--active a::after  {

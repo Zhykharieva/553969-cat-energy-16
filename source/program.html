@@ -50,20 +50,20 @@
 
           <div class="form__wrapper">
           <fieldset class="form__item">
-            <legend class="visually-hidden">Личные данные:</legend>
+            <h2 class="visually-hidden">Личные данные:</h2>
             <label class="form__list form__list--name" for="name">
               <div >Имя:*</div>
-            <input class="form__option" type="text" value="БАРСИК" id="name">
+            <input class="form__option" type="text" placeholder="БАРСИК" id="name">
           </label>
             <label class="form__list" for="weight">
             <div>Вес&nbsp;(кг):*</div>
-            <input class="form__option" type="text" name="weight" id="weight" value="7">
+            <input class="form__option" type="text" name="weight" id="weight" placeholder="7">
            </label>
             <label class="form__list" for="age">
               <div >Возраст&nbsp;(лет):</div>
               <div class="form__box">
 
-                <input  class="form__option" type="text" name="age" id="age" value="7">
+                <input  class="form__option" type="text" name="age" id="age" placeholder="7">
                 </div>
             </label>
           </fieldset>
@@ -84,8 +84,8 @@
         </div>
           </div>
         <div class="form__wrapper">
-          <fieldset class="form__item">
-            <legend class="form__info">Контактные данные (владельца кота):</legend>
+          <fieldset class="form__item form__item--owner">
+            <h2 class="form__info form__info--owner">Контактные данные (владельца кота):</h2>
             <div class="form__contact-wrapper">
             <div class="form__contact">
             <label for="e-mail">E-mail:*</label>
@@ -109,13 +109,13 @@
           </div>
           </fieldset>
           <fieldset class="form__item form__item--comment">
-            <legend class="form__info form__info--comment">Комментарий</legend>
+            <h2 class="form__info form__info--comment">Комментарий</h2>
             <textarea name="name" rows="8" class="form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
         </div>
         <div class="form__wrapper">
           <fieldset class="form__item form__item--add">
-            <legend class="form__info form__info--add">Дополнительно</legend>
+            <h2 class="form__info form__info--add">Дополнительно</h2>
             <div class="form__checkbox-wrapper">
             <input class="form__option form__option--checkbox visually-hidden" type="checkbox" id="sweetener" checked>
             <label class="form__checkbox-label" for="sweetener">Сахарозаменитель</label>

@@ -11,14 +11,14 @@
   margin-top: 15px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 39px;
   padding-right: 50px;
 }
 
 .form__wrapper--border{
   border-bottom: 1px solid #ededed;
   border-top: 1px solid #ededed;
-  padding-bottom: 9px;
+  padding-bottom: 2px;
 }
 
 .form__container {
@@ -29,22 +29,25 @@
 .form__item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   @include form;
   border: none;
   margin-left: 20px;
   margin-right: 20px;
   padding: 0;
-  padding-bottom: 18px;
+  margin-bottom: 24px;
 }
 
 .form__list {
   display: flex;
   max-width: 100%;
   margin: 0;
-  margin-bottom: 6px;
-  margin-top: 9px;
+  margin-bottom: 15px;
   align-items: center;
+}
 
+.form__list:last-child {
+  margin-bottom: 0;
 }
 
 .form__list div {
@@ -58,11 +61,11 @@
 
 .form__option {
   width: 100%;
-  padding-left: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 16px;
+  padding: 12px 0 10px 15px;
+  border: 1px solid #e6e6e6;
   @include form;
+  line-height: 20px;
+  height: 20px;
 }
 
 .form__box {
@@ -154,7 +157,7 @@
 }
 
 .form__info--comment {
-  margin-top: -2px;
+  margin-top: -5px;
   margin-bottom: 34px;
 }
 
@@ -175,11 +178,12 @@
 }
 
 .form__info--add {
-  margin-top: 8px;
+  margin-top: -17px;
+  padding-top: 16px;
 }
 
 .form__info--add::after {
-  margin-top: 0px;
+  margin-top: 9px;
   margin-left: 23px;
 }
 
@@ -221,11 +225,12 @@
 }
 
 .form__container {
-  margin-bottom: 33px;
+  margin-bottom: 25px;
 }
 
 .form__btn {
-  margin-bottom: 20px;
+  margin-top: -7px;
+  margin-bottom: 21px;
 }
 
 .form__add {
@@ -244,6 +249,7 @@
    line-height: 30px;
    margin-left: 70px;
    margin-right: 270px;
+   margin-bottom: 67px;
  }
 
  .form__item {
@@ -251,12 +257,15 @@
    line-height: 20px;
    margin-left: 70px;
    margin-right: 68px;
-   margin-top: 58px;
+   margin-bottom: 73px;
+ }
+
+ .form__item--owner {
+   margin-bottom: 28px;
  }
 
  .form__list {
-   margin-top: 7px;
-   margin-bottom: 14px;
+   margin-bottom: 19px;
  }
 
  .form__option {
@@ -277,7 +286,7 @@
 
  .form__wrapper--border {
    margin: 0;
-   margin: 39px 67px 39px 70px;
+   margin: 39px 67px 59px 70px;
    border: none;
    border: 1px solid #ededed;
  }
@@ -286,11 +295,12 @@
    margin: 0;
    margin-top: 9px;
    margin-left: 30px;
+   padding-bottom: 25px;
  }
 
  .form__point {
-   margin-top: 25px;
-   margin-bottom: 8px;
+   padding-top: 0;
+   padding-bottom: 8px;
    padding-left: 57px;
  }
 
@@ -349,6 +359,7 @@
 
  .form__item--comment {
    margin-top: 10px;
+   margin-bottom: 0;
    position: relative;
  }
 
@@ -372,6 +383,7 @@
 
  .form__item--add {
    margin-top:  29px;
+   margin-bottom: 26px;
  }
 
  .form__checkbox-wrapper {
@@ -411,7 +423,7 @@
 
  .form__add {
    font-size: 16px;
-   padding-top: 14px;
+   padding-top: 7px;
  }
 }
 
