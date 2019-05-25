@@ -241,7 +241,7 @@
     right: 0;
     bottom: 0;
     height: 100%;
-    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    background: linear-gradient(to right, #f2f2f2 49%, #eaeaea 49%);
     z-index: 0;
 }
 
@@ -251,17 +251,21 @@
 }
 
   .example__img {
-    bottom: -2px;
-    left: 46px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .example__img--before {
-    clip: rect(auto, 337px, auto, auto);
+    clip: rect(auto, 345px, auto, auto);
   }
 
   .example__img--after {
     display: block;
-    clip: rect(auto, auto, auto, 337px);
+    clip: rect(auto, auto, auto, 345px);
   }
 
   .example__range {
@@ -272,9 +276,15 @@
   }
 
   .example__btn {
+    position: relative;
     font-size: 20px;
     border-bottom: 1px dotted #d9d9d9;
     padding-bottom: 5px;
+    z-index: 2;
+  }
+
+  .example__btn--after {
+    background-color: #eaeaea;
   }
 
   .example__line {

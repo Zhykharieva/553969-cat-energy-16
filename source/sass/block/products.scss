@@ -7,7 +7,7 @@
 
 .products__item {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   border-top: 1px solid #ededed;
 }
 
@@ -61,7 +61,7 @@
 
 .products__item--more {
   border-bottom: 1px solid #ededed;
-  padding-bottom: 25px;
+  padding-bottom: 27px;
 }
 
 .products__wrapper--more {
@@ -150,6 +150,12 @@
     min-height: 213px;
     top: -210px;
   }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .products__image {
+    left: 30px;
+  }
+}
 
   .products__image--little {
     top:-174px;

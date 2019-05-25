@@ -50,12 +50,12 @@
   margin-bottom: 0;
 }
 
-.form__list div {
+.form__list span {
   margin-right: 20px;
 
 }
 
-.form__list--name div {
+.form__list--name span {
   margin-right: 12px;
 }
 
@@ -194,9 +194,12 @@
   flex-direction: column;
 }
 
+.form__checkbox-input {
+  margin-bottom: 25px;
+}
+
 .form__checkbox-label {
   padding-left: 46px;
-  margin-bottom: 25px;
   position: relative;
 }
 
@@ -276,11 +279,11 @@
    padding-left: 18px;
  }
 
- .form__list div {
+ .form__list span {
    margin-right: 19px;
  }
 
- .form__list--name div {
+ .form__list--name span {
    margin-right: 17px;
  }
 
@@ -393,10 +396,14 @@
    margin-top: 66px;
  }
 
- .form__checkbox-label {
-   width: 36%;
-   padding-left: 57px;
+ .form__checkbox-input {
+   display: flex;
+   width: 45%;
    margin-bottom: 52px;
+ }
+
+ .form__checkbox-label {
+   padding-left: 57px;
  }
 
  .form__checkbox-label::before {
@@ -436,14 +443,21 @@
 
   .form__item {
     margin: 0;
-    margin-top: 30px;
     padding-bottom: 0px;
+  }
+
+  .form__item--owner {
+    margin-bottom: 30px;
+  }
+
+  .form__item--comment {
+    margin-bottom: 30px;
   }
 
   .form__wrapper--border {
     margin: 0;
-    margin-top: 37px;
     margin-bottom: 16px;
+    padding-bottom: 26px;
   }
 
   .form__item--program {
@@ -468,6 +482,21 @@
     margin-right: 40px;
   }
 
+  .form__info--owner::after {
+    top: 90%;
+    width: 704px;
+  }
+
+  .form__info--comment::after {
+    top: 65%;
+    width: 1042px;
+  }
+
+  .form__info--add::after {
+    top: 57%;
+    width: 1013px;
+  }
+
   .form__point {
     padding-left: 57px;
   }
@@ -488,16 +517,18 @@
   }
 
   .form__item--add {
-    margin-top: 48px;
+    margin-top: 33px;
   }
 
-  .form__checkbox-label {
-    width: 187px;
+  .form__checkbox-input {
+    width: 243px;
+    display: flex;
+    flex-direction: row;
   }
 
   .form__container {
     margin-left: 40px;
-    margin-top: 26px;
+    margin-top: 33px;
   }
 
   .form__btn {

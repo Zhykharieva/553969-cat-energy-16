@@ -7,7 +7,7 @@
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
-    </head>
+  </head>
   <body>
     <header class="header">
       <div class="wrapper wrapper--other">
@@ -40,101 +40,105 @@
     <main class="page-form">
       <div class="wrapper wrapper--other">
         <h1 class="page-form__title">Подбор программы</h1>
-      <section class="form">
-        <div class="form__text">
-          Заполните анкету и мы подберем программу питания для вашего кота
-        </div>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <div class="form__data-container">
-
-
-          <div class="form__wrapper">
-          <fieldset class="form__item">
-            <h2 class="visually-hidden">Личные данные:</h2>
-            <label class="form__list form__list--name" for="name">
-              <div >Имя:*</div>
-            <input class="form__option" type="text" placeholder="БАРСИК" id="name">
-          </label>
-            <label class="form__list" for="weight">
-            <div>Вес&nbsp;(кг):*</div>
-            <input class="form__option" type="text" name="weight" id="weight" placeholder="7">
-           </label>
-            <label class="form__list" for="age">
-              <div >Возраст&nbsp;(лет):</div>
-              <div class="form__box">
-
-                <input  class="form__option" type="text" name="age" id="age" placeholder="7">
+        <section class="form">
+          <div class="form__text">
+            Заполните анкету и мы подберем программу питания для вашего кота
+          </div>
+          <form class="form__sent" method="post" action="https://echo.htmlacademy.ru">
+            <div class="form__data-container">
+              <div class="form__wrapper">
+                <fieldset class="form__item">
+                  <h2 class="visually-hidden">Личные данные:</h2>
+                  <label class="form__list form__list--name" for="name">
+                  <span >Имя:*</span>
+                  <input class="form__option form__option--check" type="text" placeholder="БАРСИК" id="name">
+                  </label>
+                  <label class="form__list" for="weight">
+                  <span>Вес&nbsp;(кг):*</span>
+                  <input class="form__option form__option--check" type="text" name="weight" id="weight" placeholder="7">
+                  </label>
+                  <label class="form__list" for="age">
+                  <span >Возраст&nbsp;(лет):</span>
+                  <span class="form__box">
+                  <input  class="form__option" type="text" name="age" id="age" placeholder="7">
+                  </span>
+                  </label>
+                </fieldset>
+              </div>
+              <div class="form__wrapper  form__wrapper--border">
+                <fieldset class="form__item form__item--program">
+                  <input class="form__radio-btn visually-hidden" type="radio" id="less-weight" name="choice" checked>
+                  <label class="form__point" for="less-weight" tabindex="0">
+                  Похудение
+                  </label>
+                  <input class="form__radio-btn visually-hidden" type="radio" id="more-weight" name="choice">
+                  <label class="form__point" for="more-weight" tabindex="0">Набор массы
+                  </label>
+                  <input class="form__radio-btn visually-hidden" type="radio" id="doubt" name="choice">
+                  <label class="form__point" for="doubt" tabindex="0">Не знаю (нужен ваш совет)
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="form__wrapper">
+              <fieldset class="form__item form__item--owner">
+                <h2 class="form__info form__info--owner">Контактные данные (владельца кота):</h2>
+                <div class="form__contact-wrapper">
+                  <div class="form__contact">
+                    <label for="e-mail">E-mail:*</label>
+                    <div class="form__contact-container">
+                      <input class="form__option form__option--contact form__option--check" type="text" placeholder="kuklachev@gmail.com" id="e-mail">
+                      <svg class="form__icon" width="18" height="20">
+                        <use xlink:href="img/sprite.svg#icon-mail"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="form__contact">
+                    <label for="phone">Телефон:*</label>
+                    <div class="form__contact-container">
+                      <input class="form__option form__option--contact form__option--check" type="text" id="phone" placeholder="8 (960) 900-60-90">
+                      <svg class="form__icon" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-phone"></use>
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-            </label>
-          </fieldset>
+              </fieldset>
+              <fieldset class="form__item form__item--comment">
+                <h2 class="form__info form__info--comment">Комментарий</h2>
+                <textarea name="name" rows="8" class="form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </fieldset>
             </div>
-            <div class="form__wrapper  form__wrapper--border">
-          <fieldset class="form__item form__item--program">
-            <input class="form__radio-btn visually-hidden" type="radio" id="less-weight" name="choice" checked>
-            <label class="form__point" for="less-weight" tabindex="0">
-            Похудение
-            </label>
-            <input class="form__radio-btn visually-hidden" type="radio" id="more-weight" name="choice">
-            <label class="form__point" for="more-weight" tabindex="0">Набор массы
-            </label>
-            <input class="form__radio-btn visually-hidden" type="radio" id="doubt" name="choice">
-            <label class="form__point" for="doubt" tabindex="0">Не знаю (нужен ваш совет)
-            </label>
-          </fieldset>
-        </div>
-          </div>
-        <div class="form__wrapper">
-          <fieldset class="form__item form__item--owner">
-            <h2 class="form__info form__info--owner">Контактные данные (владельца кота):</h2>
-            <div class="form__contact-wrapper">
-            <div class="form__contact">
-            <label for="e-mail">E-mail:*</label>
-            <div class="form__contact-container">
-            <input class="form__option form__option--contact" type="text" placeholder="kuklachev@gmail.com" id="e-mail">
-
-            <svg class="form__icon" width="18" height="20">
-                     <use xlink:href="img/sprite.svg#icon-mail"></use>
-                   </svg>
-          </div>
+            <div class="form__wrapper">
+              <fieldset class="form__item form__item--add">
+                <h2 class="form__info form__info--add">Дополнительно</h2>
+                <div class="form__checkbox-wrapper">
+                  <div class="form__checkbox-input">
+                    <input class="form__option form__option--checkbox visually-hidden" type="checkbox" id="sweetener" checked>
+                    <label class="form__checkbox-label" for="sweetener">Сахарозаменитель</label>
+                  </div>
+                  <div class="form__checkbox-input">
+                    <input class="form__option form__option--checkbox visually-hidden" type="checkbox" id="water">
+                    <label class="form__checkbox-label" for="water">Питьевая вода</label>
+                  </div>
+                  <div class="form__checkbox-input">
+                    <input class="form__option form__option--checkbox visually-hidden" type="checkbox" id="milk">
+                    <label class="form__checkbox-label" for="milk">Молоко</label>
+                  </div>
+                  <div class="form__checkbox-input">
+                    <input class="form__option form__option--checkbox visually-hidden" type="checkbox" id="vitamins">
+                    <label class="form__checkbox-label" for="vitamins">Витамины</label>
+                  </div>
+                </div>
+              </fieldset>
             </div>
-            <div class="form__contact">
-            <label for="phone">Телефон:*</label>
-            <div class="form__contact-container">
-              <input class="form__option form__option--contact" type="text" id="phone" placeholder="8 (960) 900-60-90">
-              <svg class="form__icon" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-phone"></use>
-                  </svg>
+            <div class="form__container">
+              <button class="form__btn btn">Отправить заявку</button>
+              <span class="form__add">* &mdash; Обязательные поля</span>
             </div>
-          </div>
-          </div>
-          </fieldset>
-          <fieldset class="form__item form__item--comment">
-            <h2 class="form__info form__info--comment">Комментарий</h2>
-            <textarea name="name" rows="8" class="form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
-        </div>
-        <div class="form__wrapper">
-          <fieldset class="form__item form__item--add">
-            <h2 class="form__info form__info--add">Дополнительно</h2>
-            <div class="form__checkbox-wrapper">
-            <input class="form__option form__option--checkbox visually-hidden" type="checkbox" id="sweetener" checked>
-            <label class="form__checkbox-label" for="sweetener">Сахарозаменитель</label>
-            <input class="form__option form__option--checkbox visually-hidden" type="checkbox" id="water">
-            <label class="form__checkbox-label" for="water">Питьевая вода</label>
-            <input class="form__option form__option--checkbox visually-hidden" type="checkbox" id="milk">
-            <label class="form__checkbox-label" for="milk">Молоко</label>
-            <input class="form__option form__option--checkbox visually-hidden" type="checkbox" id="vitamins">
-            <label class="form__checkbox-label" for="vitamins">Витамины</label>
-            </div>
-          </fieldset>
-        </div>
-        <div class="form__container">
-            <a class="form__btn btn" href="#">Отправить заявку</a>
-          <span class="form__add">* &mdash; Обязательные поля</span>
-            </div>
-        </form>
-      </section>
-    </div>
+          </form>
+        </section>
+      </div>
       <section class="map">
         <div class="wrapper wrapper--other">
           <div class="map__about invitation invitation--program">
