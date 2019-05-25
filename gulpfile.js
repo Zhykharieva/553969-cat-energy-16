@@ -16,6 +16,7 @@ var svgstore = require("gulp-svgstore");
 var svgmin = require('gulp-svgmin');
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var csso = require("gulp-csso")
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -25,6 +26,8 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
