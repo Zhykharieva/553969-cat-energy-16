@@ -1,25 +1,25 @@
 "use strict";
 
-var gulp = require("gulp");
-var plumber = require("gulp-plumber");
-var sourcemap = require("gulp-sourcemaps");
-var sass = require("gulp-sass");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var server = require("browser-sync").create();
-var gulp = require("gulp");
-var rename = require("gulp-rename");
+var gulp = require('gulp');
+var plumber = require('gulp-plumber');
+var sourcemap = require('gulp-sourcemaps');
+var sass = require('gulp-sass');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var server = require('browser-sync').create();
+var gulp = require('gulp');
+var rename = require('gulp-rename');
 var gulp = require('gulp');
 var webp = require('gulp-webp');
-var imagemin = require("gulp-imagemin");
-var svgstore = require("gulp-svgstore");
+var imagemin = require('gulp-imagemin');
+var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
-var posthtml = require("gulp-posthtml");
-var include = require("posthtml-include");
-var csso = require("gulp-csso");
-var del = require("del");
-var htmlmin = require("gulp-htmlmin");
-var jsmin = require("gulp-uglify");
+var posthtml = require('gulp-posthtml');
+var include = require('posthtml-include');
+var csso = require('gulp-csso');
+var del = require('del');
+var htmlmin = require('gulp-htmlmin');
+var jsmin = require('gulp-uglify');
 
 gulp.task('copy', () => gulp.src([
   'source/fonts/**/*.{woff,woff2}',
@@ -27,7 +27,7 @@ gulp.task('copy', () => gulp.src([
 ], {
   base: 'source',
 })
-  .pipe(gulp.dest('build')));
+  .pipe(gulp.dest("build")));
 
 gulp.task('clean', () => del('build'));
 
